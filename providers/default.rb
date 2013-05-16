@@ -83,7 +83,7 @@ def before_deploy
     owner new_resource.owner
     group new_resource.group
     mode '0755'
-    recursive true
+    # recursive true #turning off recursive due to everything that preexists in shared currently
   end
 
   if new_resource.deploy_key
